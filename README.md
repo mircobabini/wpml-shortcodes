@@ -1,5 +1,4 @@
 # WPML Shortcodes
-Developed by [Mirco Babini](http://www.mircobabini.com/donate) (Web Developer & Mobile App Developer), CEO @ [SED Web](http://www.sedweb.it)
 
 **Easily add strings to translate to your (child) theme or everywhere in your WordPress website.**
 
@@ -28,6 +27,10 @@ If you wanna contribute, pull requests on [github.com](https://github.com/mircob
 ## Installation
 
 Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install and activate it. That's it!
+
+## Credits
+
+Developed by [Mirco Babini](http://www.mircobabini.com/donate) (Web Developer & Mobile App Developer), CEO @ [SED Web](http://www.sedweb.it)
 
 ##### License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
 ##### [WPML Shortodes on wordpress.org/plugins](http://wordpress.org/plugins/wpml-shortcodes/)
