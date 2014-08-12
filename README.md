@@ -15,18 +15,19 @@ That’s it; just provide translations from the WPML > String Translations admin
 Check how to use the shotcode below.
 
 ## Usage (via code)
-<pre>&lt;h1>&lt;?php echo wpml__( ‘Title’, ‘wpmlshortcodes’ ); ?>&lt;/h1>
-&lt;h2>&lt;?php wpml_e( ‘Subtitle’, ‘wpmlshortcodes’ ); ?>&lt;/h2></pre>
+<pre>&lt;h1>&lt;php echo wpml__( 'Title', 'wpmlshortcodes' ); ?>&lt;/h1>
+&lt;h2>&lt;?php wpml_e( 'Subtitle', 'wpmlshortcodes' ); ?>&lt;/h2></pre>
 
 ## Usage (via shortcode)
 <pre>&lt;h1>[wpml__ context=wpmlshortcodes]Title[/wpml__]&lt;/h1>
 &lt;h2>[wpml__ context=wpmlshortcodes]Subtitle[/wpml__]&lt;/h2></pre>
 
 ## Contribute
-If you wanna contribute, pull requests on [github.com](https://github.com/mircobabini/wpml-shortcodes).
+If you wanna contribute, pull requests on [github.com](https://github.com/mircobabini/wpml-shortcodes/pulls).
 
 ## Installation
 
 Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install and activate it. That's it!
 
 ##### License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
+##### [WPML Shortodes on wordpress.org/plugins](http://wordpress.org/plugins/wpml-shortcodes/)
