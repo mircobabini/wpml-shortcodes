@@ -1,6 +1,6 @@
 # WPML Shortcodes
 
-![WPML Shortcodes plugin for WordPress by Mirco Babini](http://plugins.svn.wordpress.org/wpml-shortcodes/assets/banner-772x250.jpg "WPML Shortcodes plugin for WordPress by Mirco Babini")
+![WPML Shortcodes plugin for WordPress by Mirco Babini](http://sed-web.com/pi.php?n=wpml-shortcodes "WPML Shortcodes plugin for WordPress by Mirco Babini")
 
 **Easily add strings to translate to your (child) theme or everywhere in your WordPress website.**
 
