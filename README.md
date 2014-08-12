@@ -1,17 +1,10 @@
-=== WPML Shortcodes ===
-Contributors: mirkolofio <mirkolofio@gmail.com>, SED Web Enhancement <it@sed-web.com>
-Donate link: http://mircobabini.com/donate/
-Tags: wpml, language, translate, translation, translator, shortcode, lang, theme, plugin
-Requires at least: 2.8
-Tested up to: 3.9.1
-Stable tag: 1.2.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# WPML Shortcodes
+Developed by [Mirco Babini](http://www.mircobabini.com/donate) (Web Developer & Mobile App Developer), CEO @ [SED Web](http://www.sedweb.it)
 
-Easily add strings to translate to your (child) theme or everywhere in your WordPress website.
+**Easily add strings to translate to your (child) theme or everywhere in your WordPress website.**
 
-== Description ==
-Adds the wpml__ and wpml_e functions to your theme and the wpml__ shortcode to your WordPress website. Make your WordPress <strong>full WPML ready</strong>
+## Description
+Adds the wpml__ and wpml_e functions to your theme and the wpml__ shortcode to your WordPress website. Make your WordPress <strong>full WPML ready</strong>!
 
 <pre>&lt;?php wpml__( $text, $context ); ?>
 &lt;?php wpml_e( $text, $context ); ?></pre>
@@ -21,28 +14,20 @@ That’s it; just provide translations from the WPML > String Translations admin
 
 Check how to use the shotcode below.
 
-= Usage (via code) =
+## Usage (via code)
 <pre>&lt;h1>&lt;?php echo wpml__( ‘Title’, ‘wpmlshortcodes’ ); ?>&lt;/h1>
 &lt;h2>&lt;?php wpml_e( ‘Subtitle’, ‘wpmlshortcodes’ ); ?>&lt;/h2></pre>
 
-= Usage (via shortcode) =
+## Usage (via shortcode)
 <pre>&lt;h1>[wpml__ context=wpmlshortcodes]Title[/wpml__]&lt;/h1>
 &lt;h2>[wpml__ context=wpmlshortcodes]Subtitle[/wpml__]&lt;/h2></pre>
 
-= Contribute =
+## Contribute
 If you wanna contribute, pull requests on [github.com](https://github.com/mircobabini/wpml-shortcodes).
 
-Author: [Mirco Babini](http://www.mircobabini.com/), **Web Developer and Mobile App Developer; Wordpress Consultant**.
-
-== Installation ==
+## Installation
 
 Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install and activate it. That's it!
 
-== Frequently asked questions ==
-
-== Screenshots ==
-
-== Changelog ==
-
-= 1.2.0 =
-* Ready for the marketplace
+###### License
+[GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
