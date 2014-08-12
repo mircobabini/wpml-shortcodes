@@ -29,5 +29,4 @@ If you wanna contribute, pull requests on [github.com](https://github.com/mircob
 
 Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install and activate it. That's it!
 
-###### License
-[GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
+##### License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
