@@ -3,8 +3,8 @@ Contributors: mirkolofio <mirkolofio@gmail.com>, SED Web Enhancement <it@sed-web
 Donate link: http://mircobabini.com/donate/
 Tags: wpml, language, translate, translation, translator, shortcode, lang, theme, plugin
 Requires at least: 2.8
-Tested up to: 3.9.1
-Stable tag: 1.2.0
+Tested up to: 4.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install 
 == Screenshots ==
 
 == Changelog ==
+
+= 1.2.1 =
+* Fix the J.D. Grimes issue (/pull/1)
+* Needed to manually restore all the translated strings
 
 = 1.2.0 =
 * Ready for the marketplace
