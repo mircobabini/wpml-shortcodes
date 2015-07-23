@@ -4,7 +4,7 @@ Plugin Name: WPML Shortcodes
 Plugin URI: http://github.com/mircobabini/wpml-shortcodes
 Description: Adds shortcodes to the WPML environment, like wpml__, wpml_e and more. Make your WordPress <strong>full WPML ready</strong>.
 Author: Mirco Babini
-Version: 1.2.2
+Version: 1.2.3
 Author URI: http://github.com/mircobabini
 */
 
@@ -33,23 +33,24 @@ function wpml__shortcode( $attr, $content = null ){
 
 	extract(shortcode_atts(array(
 		'context' => null,
+		'name'    => null,
 	), $attr));
 
 	if( $context === null ){
 		return $content;
 	}
 
-	return wpml__( $content, $context );
+	return wpml__( $content, $context, $name );
 }
 add_shortcode( 'wpml__', 'wpml__shortcode' );
 
-function wpml__( $string, $context ){
-	_icl_register_string( $string, $context );
-	$translation = _icl_t( $string, $context );
+function wpml__( $string, $context, $name = null ){
+	_icl_register_string( $string, $context, $name );
+	$translation = _icl_t( $string, $context, $name );
 	return $translation;
 }
-function wpml_e( $string, $context ){
-	$translation = wpml__( $string, $context );
+function wpml_e( $string, $context, $name = null ){
+	$translation = wpml__( $string, $context, $name );
 	echo $translation;
 }
 
