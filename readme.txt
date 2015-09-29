@@ -4,7 +4,7 @@ Donate link: http://mircobabini.com/donate/
 Tags: wpml, language, translate, translation, translator, shortcode, lang, theme, plugin
 Requires at least: 2.8
 Tested up to: 4.2.2
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install 
 == Screenshots ==
 
 == Changelog ==
+
+= 1.2.4 =
+* Integration: WPML Translate Shortcode (deprecated since now)
+* usage: [wpml_if lang=it]ciao[/wpml_if][wpml_if lang=en]hello[/wpml_if]
 
 = 1.2.3 =
 * Support defined name for shortcodes
