@@ -1,5 +1,5 @@
 # WPML Shortcodes
-**Easily add strings to translate to your (child) theme or everywhere in your WordPress website.**
+**Adds shortcodes to the WPML environment, like wpml__, wpml_e and more. Makes WP full WPML ready.**
 
 ## Description
 Adds the wpml__ and wpml_e functions to your theme and the wpml__ shortcode to your WordPress website. Make your WordPress <strong>full WPML ready</strong>!
