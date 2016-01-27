@@ -1,10 +1,10 @@
 === WPML Shortcodes ===
-Contributors: mirkolofio <mirkolofio@gmail.com>, SED Web Enhancement <it@sed-web.com>
+Contributors: mirkolofio <mirkolofio@gmail.com>, SED Web Enhancement <sedwebagency@gmail.com>
 Donate link: http://mircobabini.com/donate/
 Tags: wpml, language, translate, translation, translator, shortcode, lang, theme, plugin
 Requires at least: 2.8
-Tested up to: 4.2.2
-Stable tag: 1.2.4
+Tested up to: 4.4.2
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,36 +13,56 @@ Easily add strings to translate to your (child) theme or everywhere in your Word
 == Description ==
 Adds the wpml__ and wpml_e functions to your theme and the wpml__ shortcode to your WordPress website. Make your WordPress <strong>full WPML ready</strong>
 
-<pre>&lt;?php wpml__( $text, $domain ); ?>
-&lt;?php wpml_e( $text, $domain ); ?></pre>
+<pre>&lt;?php wpml__( $text, $context ); ?>
+&lt;?php wpml_e( $text, $context ); ?></pre>
 
-Similarly to the behaviour of the __, _e functions, you must provide a string to make translateable and a domain.
-That’s it; just provide translations from the WPML > String Translations admin panel.
+Similarly to the behaviour of the __, _e functions, you must provide a string to make translateable and a context.
+That's it; just provide translations from the WPML > String Translations admin panel.
 
-Check how to use the shotcode below.
+Check how to use the shortcode below.
 
 = Usage (via code) =
-<pre>&lt;h1>&lt;?php echo wpml__( ‘Title’, ‘wpmlshortcodes’ ); ?>&lt;/h1>
-&lt;h2>&lt;?php wpml_e( ‘Subtitle’, ‘wpmlshortcodes’ ); ?>&lt;/h2></pre>
+<pre>&lt;h1>&lt;?php echo wpml__( 'Title', 'wpmlshortcodes' ); ?>&lt;/h1>
+&lt;h2>&lt;?php wpml_e( 'Subtitle', 'wpmlshortcodes' ); ?>&lt;/h2></pre>
 
 = Usage (via shortcode) =
-<pre>&lt;h1>[wpml__ domain=wpmlshortcodes]Title[/wpml__]&lt;/h1>
-&lt;h2>[wpml__ domain=wpmlshortcodes]Subtitle[/wpml__]&lt;/h2></pre>
+<pre>&lt;h1>[wpml__ context=wpmlshortcodes]Title[/wpml__]&lt;/h1>
+&lt;h2>[wpml__ context=wpmlshortcodes]Subtitle[/wpml__]&lt;/h2></pre>
+
+> <strong>NEWS! WPML Translate (+ shortcode)</strong><br>
+> Adds the wpml_if (ex wpml_translate) shortcode to your WPML suite. You can also use the wpml_e__if_language( $content, $lang ) in your php code.
+
+= Usage (via code) =
+<pre>&lt;p>&lt;?php
+wpml_e__if_language( 'Text', 'en' );
+wpml_e__if_language( 'Testo', 'it' );
+?>&lt;/p></pre>
+
+= Usage (via shortcode) =
+[wpml_if lang='en']Text[/wpml_if][wpml_if lang='it']Testo[/wpml_if]
+
 
 = Contribute =
-If you wanna contribute, pull requests on [github.com](https://github.com/mircobabini/wpml-shortcodes).
+Pull requests on [github.com](https://github.com/mircobabini/wpml-shortcodes).
 
-Author: [Mirco Babini](http://www.mircobabini.com/), **Web Developer and Mobile App Developer; Wordpress Consultant**.
+Author: [Mirco Babini](http://github.com/mircobabini), **Web Developer and Mobile App Developer; WordPress Consultant**.
 
 == Installation ==
 
-Simply search for ‘WPML Shortcodes’ in the Plugins Admin page, then install and activate it. That's it!
+Simply search for 'WPML Shortcodes' in the Plugins Admin page, then install and activate. That's it!
 
 == Frequently asked questions ==
 
 == Screenshots ==
 
 == Changelog ==
+
+= 1.2.5 =
+* Fix docs
+* Support optional context in main api
+* Fallback on global context, api: wpml__main_context( $context )
+* Fix shortcodes
+* Refactoring
 
 = 1.2.4 =
 * Integration: WPML Translate Shortcode (deprecated since now)
