@@ -1,7 +1,4 @@
 # WPML Shortcodes
-
-![WPML Shortcodes plugin for WordPress by Mirco Babini](http://sed-web.com/pi.php?n=wpml-shortcodes "WPML Shortcodes plugin for WordPress by Mirco Babini")
-
 **Easily add strings to translate to your (child) theme or everywhere in your WordPress website.**
 
 ## Description
